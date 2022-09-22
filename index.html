@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="stylesheet"
+      href="assets\fonts\PlusJakartaSans-VariableFont_wght.ttf"
+    />
+    <link
+      rel="stylesheet"
+      href="assets\fonts\static\PlusJakartaSans-ExtraBold.ttf"
+    />
+    <link
+      rel="stylesheet"
+      href="assets\fonts\static\PlusJakartaSans-Medium.ttf"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <script type="module" src="/scripts/main.js"></script>
+    <link rel="stylesheet" href="/styles/main.css" />
+    <title>Frontend Mentor | Notifications page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="flex flex-column align-center justify-center">
+    <main
+      class="flex flex-column align-center justify-center notification-container"
+    >
+      <div
+        class="flex flex-row align-center justify-space-between notification-container__header"
+      >
+        <h2 class="notification-container__header-item-1">
+          Notifications <span class="new-notification-count">3</span>
+        </h2>
+        <span class="notification-container__header-item-2">
+          Mark all as read
+        </span>
+      </div>
+
+      <section class="flex flex-column notification-body">
+        <!-- item 1 -->
+        <div class="notification-card notification-item-1 notification-unread">
+          <div class="flex justify-center align-center notification-card__img">
+            <img src="assets/images/avatar-mark-webber.webp" alt="" srcset="" />
+          </div>
+          <div class="flex flex-column notification-card_content">
+            <div class="notification-card-content__header">
+              <span class="heeding"> Mark Webber </span> reacted to your recent
+              post
+              <span class="tag"> My first tournament today!</span>
+              <span class="new-notification-notifier"></span>
+            </div>
+            <div><span> 1m ago</span></div>
+          </div>
+        </div>
+
+        <!-- item 2 -->
+
+        <div class="notification-card notification-item-1 notification-unread">
+          <div class="flex justify-center align-center notification-card__img">
+            <img src="assets\images\avatar-angela-gray.webp" alt="" srcset="" />
+          </div>
+          <div class="flex flex-column notification-card_content">
+            <div class="notification-card-content__header">
+              <span class="heeding"> Angela Gray </span>followed you
+              <span class="new-notification-notifier"></span>
+            </div>
+            <div><span> 5m ago</span></div>
+          </div>
+        </div>
+
+        <!-- item 3 -->
+        <div class="notification-card notification-item-1 notification-unread">
+          <div class="flex justify-center align-center notification-card__img">
+            <img
+              src="assets\images\avatar-jacob-thompson.webp"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div class="flex flex-column notification-card_content">
+            <div class="notification-card-content__header">
+              <span class="heeding"> Jacob Thompson </span> has joined your
+              group
+              <span class="tag"> Chess Club</span>
+              <span class="new-notification-notifier"></span>
+            </div>
+            <div><span> 1 day ago</span></div>
+          </div>
+        </div>
+
+        <!-- item 4 -->
+        <div class="notification-card notification-item-1">
+          <div class="flex justify-center align-center notification-card__img">
+            <img
+              src="assets\images\avatar-rizky-hasanuddin.webp"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div class="flex flex-column notification-card_content">
+            <div class="notification-card-content__header">
+              <span class="heeding"> Rizky Hasanuddin </span> sent you a private
+              message
+            </div>
+            <div><span> 5 days ago</span></div>
+
+            <div class="notification-card-item__contnent new-notification">
+              Hello, thanks for setting up the Chess Club. I've been a member
+              for a few weeks now and I'm already having lots of fun and
+              improving my game.
+            </div>
+          </div>
+        </div>
+
+        <!-- item 5 -->
+        <div class="notification-card notification-item-1">
+          <div class="flex justify-center align-center notification-card__img">
+            <img
+              src="assets\images\avatar-kimberly-smith.webp"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div class="flex flex-column notification-card_content">
+            <div class="notification-card-content__header">
+              <span class="heeding"> Kimberly Smith </span> commented on your
+              picture
+            </div>
+            <div><span> 1 week ago</span></div>
+          </div>
+        </div>
+
+        <!-- item 6-->
+
+        <div class="notification-card notification-item-1">
+          <div class="flex justify-center align-center notification-card__img">
+            <img
+              src="assets\images\avatar-nathan-peterson.webp"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div class="flex flex-column notification-card_content">
+            <div class="notification-card-content__header">
+              <span class="heeding"> Nathan Peterson </span> reacted to your
+              recent post 5 end-game strategies to increase your win rate
+            </div>
+            <div><span> 2 weeks ago </span></div>
+          </div>
+        </div>
+
+        <!-- item 7 -->
+        <div class="notification-card notification-item-1">
+          <div class="flex justify-center align-center notification-card__img">
+            <img src="assets\images\avatar-anna-kim.webp" alt="" srcset="" />
+          </div>
+          <div class="flex flex-column notification-card_content">
+            <div class="notification-card-content__header">
+              <span class="heeding"> Anna Kim </span> left the group Chess Club
+            </div>
+            <div><span> 2 weeks ago</span></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Dacosta Solomon</a>.
+    </div>
+  </body>
+</html>
